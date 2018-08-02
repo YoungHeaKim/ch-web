@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="btn-tennis_ball-a" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#B4EC51"/>
+      <stop offset="100%" stop-color="#429321"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="20" cy="20" r="20" fill="url(#btn-tennis_ball-a)"/>
+    <path stroke="#FFF" stroke-linecap="square" d="M36,5 C30,10 27,15 27,20 C27,25 30,30 36,35"/>
+    <path stroke="#FFF" stroke-linecap="square" d="M14,5 C8,10 5,15 5,20 C5,25 8,30 14,35" transform="matrix(-1 0 0 1 19 0)"/>
+  </g>
+</svg>

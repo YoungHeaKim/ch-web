@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="83" viewBox="0 0 52 83">
+  <defs>
+    <rect id="icon-box-a" width="52" height="83"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" opacity=".9" style="mix-blend-mode:hard-light">
+    <use fill="#FFF" style="mix-blend-mode:hard-light" xlink:href="#icon-box-a"/>
+    <rect width="50" height="81" x="1" y="1" stroke="#16203C" stroke-width="2"/>
+  </g>
+</svg>

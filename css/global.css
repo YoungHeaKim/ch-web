@@ -1,0 +1,11 @@
+.wrap {
+    width: 1440px;
+    background: blue;
+}
+
+.wrapContent {
+    width: 1131px;
+    margin: auto;
+    position: relative;
+    background: #fefefe;
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="128" viewBox="0 0 70 128">
+  <defs>
+    <rect id="logo-sub-a" width="11.647" height="4.042" x="12.353" y="63.326"/>
+    <polygon id="logo-sub-b" points="15.108 118.078 20.608 128 9.608 128"/>
+    <polygon id="logo-sub-c" points="15.108 0 20.608 9.922 9.608 9.922"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#BA2A2A" d="M17.8431373,63.2885449 L44.8786378,63.2885449 L44.8786378,67.406192 L17.8431373,67.406192 L17.8431373,128 L12.3529412,128 L12.3529412,67.406192 L0.415479876,67.406192 L0.415479876,63.2885449 L12.3529412,63.2885449 L12.3529412,1.34736842 L17.8431373,1.34736842 L17.8431373,63.2885449 Z M17.8431373,63.2885449 L12.3529412,63.2885449 L12.3529412,67.406192 L17.8431373,67.406192 L17.8431373,63.2885449 Z"/>
+    <ellipse cx="43.922" cy="64.674" stroke="#16203C" stroke-width="5" rx="23.578" ry="35.226"/>
+    <rect width="7" height="17.356" x="63" y="54.237" fill="#FFF"/>
+    <use fill="#FFF" xlink:href="#logo-sub-a"/>
+    <rect width="10.647" height="3.042" x="12.853" y="63.826" stroke="#FFF"/>
+    <use fill="#BA2A2A" xlink:href="#logo-sub-b"/>
+    <path stroke="#BA2A2A" d="M15.1078431,119.108869 L10.4566657,127.5 L19.7590206,127.5 L15.1078431,119.108869 Z"/>
+    <g transform="matrix(1 0 0 -1 0 9.922)">
+      <use fill="#BA2A2A" xlink:href="#logo-sub-c"/>
+      <path stroke="#BA2A2A" d="M15.1078431,1.03135 L10.4566657,9.42248062 L19.7590206,9.42248062 L15.1078431,1.03135 Z"/>
+    </g>
+  </g>
+</svg>
