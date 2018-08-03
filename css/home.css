@@ -1,3 +1,132 @@
-.banner {
-    
+/* banner 부분 */
+.container {
+    width: 1440px;
+    margin: auto;
+    overflow: hidden;
 }
+
+.banner {
+    width: 1130px;
+    height: 533px;
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.flexSlide {
+    height: 553px;
+}
+
+.flexSlide img {
+    width: 100%;
+    height: 100%;
+}
+
+.middle {
+    clear: both;
+    width: 1130px;
+    margin: auto;
+    border-right: 10px solid #f2f2f2;
+    border-left: 10px solid #f2f2f2;
+}
+
+.middleContiner {
+    position: relative;
+    height: 477px;
+    background-color: red;
+}
+
+/* match 부분 */
+.matchArticle {
+    position: absolute;
+    width: 640px;
+    height: 397px;
+    margin-top: 42px;
+    left: -119px;
+    color: #16203c;
+    font: 18px/18px 'Comfortaa', sans-serif;
+}
+
+.matchScroll {
+    width: 640px;
+    height: 344px;
+    overflow-x: hidden;
+}
+
+.matchArticle>h3 {
+    font: bold 18px/36px 'Comfortaa', sans-serif;
+}
+
+.matchList {
+    clear: both;
+    padding-top: 17px;
+}
+
+.matchLogo {
+    float: left;
+    width: 72px;
+    height: 78px; 
+    margin:0 17px 0 17px;
+    text-align: center;
+    background-size: cover;
+    background: url(../assets/dummy-main-bnp_open.png) no-repeat;
+}
+
+.matchList>a {
+    width: 498px;
+    height: 78px;
+    float: left;
+    padding-left:11px;
+    background: rgba(216,216,216,0.2);
+}
+
+.matchDay {
+    margin-top: 20px;
+    font: 14px/18px  'Comfortaa', sans-serif;
+}
+
+.matchChamp {
+    margin:20px 0 0 20px;
+    font:18px/24px 'Comfortaa', sans-serif; 
+}
+
+.machChamp>span {
+    display: inline-block;
+    margin:0 9px;
+}
+
+.matchList>a {
+    color: #000;
+}
+
+/* 시계부분 */
+.clock {
+    position:absolute;
+    width:52px;
+    height:83px; left:50%;
+    top: -42px;
+    margin-left: -26px;
+}
+.clock img {
+    position:absolute;
+    top:0;
+    left:0;
+}
+.clock img#round{
+    position:absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left:50%;
+    z-index: 10;
+    margin-left: -4px; 
+    margin-top: -4px;
+}
+.clock:after {
+    position: absolute;
+    width: 2px;
+    height: 400px;
+    left: 50%;
+    top: 83px;
+    content: "";
+    background-color: #16203C;
+  }
