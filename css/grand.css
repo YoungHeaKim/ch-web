@@ -1,0 +1,127 @@
+.mainImg {
+    position: relative;
+    min-width: 100%;
+    min-height: 614px;
+    background: url(../assets/dummy-french_open.png);
+    margin: auto;
+}
+
+.mainContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -266px;
+    margin-left: -451px;
+    width: 902px;
+    height: 532px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.champInner {
+    width: 652px;
+    margin: 50px auto;
+}
+
+.champMain.on {
+    display: block;
+}
+
+.champMain {
+    display: none;
+}
+
+.champ01, .champ02, .champ03 {
+    text-align: center;
+}
+
+.champTitle {
+    color: #deab04;
+    font: 24px/29px 'Comfortaa', sans-serif;
+}
+
+.champSubTitle {
+    color: #deab04;
+    font: 20px/24px 'Comfortaa', sans-serif;
+    margin: 37px 0 57px;
+}
+
+.colContainer {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    margin-bottom:16px;
+}
+
+.champName {
+    font: 20px/24px 'Comfortaa', sans-serif;
+    margin-bottom: 20px;
+}
+
+.champName>a {
+    color: #fff;
+}
+
+.ctrlPage {
+    width: 100px;
+    height: 12px;
+    margin: auto;
+}
+
+.ctrlPage>li.on {
+    border: 1px solid #deab04;
+    background-color: #deab04;
+}
+
+.ctrlPage>li {
+    float: left;
+    cursor: pointer;
+    border: 1px solid #deab04;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+}
+
+.ctrlPage>.secondPage {
+    margin: 0 32px;
+}
+
+.champContainer {
+    width: 1200px;
+    margin: auto;
+}
+
+.champList {
+    width: 1200px;
+    margin: auto;
+    clear: both;
+}
+
+.champList>.thumb {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    float: left;
+}
+
+.thumbText {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    background: #fff;
+    width: 1200px;
+    height: 200px;
+    margin-top: -200px;
+}
+
+.thumbImg {
+    width: 200px;
+    height: 200px;
+}
+
+.thumbImg.on {
+    margin-bottom: 200px;
+}
+
+.thumbText.on {
+    display: block;
+    left: 0;
+}

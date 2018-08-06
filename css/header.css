@@ -1,33 +1,60 @@
 header {
-    border-top: 10px solid #f2f2f2;
+    background: url(../assets/icon-net.svg);
+    height:168px;
 }
 
-.logoIcon.off{
-    display: none;
-}
-.tennisBall.off{
-    display: none;
-}
-
-.logo {
-    width: 30px;
-    height: 58px;
-    padding: 5px 0;
+.headerInner {
+    position: relative;
+    width: 1130px;
+    height:128px;
     margin: auto;
 }
+
+.subNav {
+    width: 887px;
+    margin: auto;
+}
+
+.subNavList {
+    margin: 55px 33px;
+    margin-bottom: 46px;
+    float: left;
+    font: 18px/24px 'Comfortaa', sans-serif;
+}
+.subNavList>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #deab04;
+}
+
+.subNavList.on {
+    border-bottom: 3px solid #deab04;
+}
+.subNavList.mainLogo{
+    margin:0 33px;
+    margin-bottom:0;
+    width:68px;
+}
+.logo {
+    margin:0 33px;
+    height: 128px;
+    margin: auto;
+}
+
 .logo img {
     width: 100%;
     height: 100%;
 }
 
-.headerInner {
-    width: 1130px;
-    margin: auto;
-    border: 0 10px solid #f2f2f2;
+.tennisBall {
+    position: absolute;
+    left: -10px;
+    top: 44px;
 }
 
 .headerNav {
-    position: absolute;
+    clear: both;
     z-index: 10;
     width: 100%;
     height: 40px;
@@ -38,6 +65,7 @@ header {
 
 .nav {
     width: 1130px;
+    height:40px;
     margin: auto;
 }
 
