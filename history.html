@@ -23,7 +23,7 @@
     <h1 class="hidden">header</h1>
     <ul class="subNav">
         <li class="subNavList on"><a href="#">Profile</a></li>
-        <li class="subNavList"><a href="profile.html">Moment of winnig</a></li>
+        <li class="subNavList"><a href="history-moment.html">Moment of winnig</a></li>
         <li class="subNavList mainLogo">
         <div class="logo">
             <h2 class="hidden">logo</h2>
@@ -82,4 +82,15 @@
 </main>
 </div>
 </body>
+
+<script type="text/javascript">
+    // 버튼을눌렀을 때 비디오 플레이 부분
+    $('.btnPlay').click(function () {
+        $('.video').css('display', 'block');
+    });
+    // 닫기버튼
+    $('.btnX').click(function () {
+        $('.video').css('display', 'none');
+    });
+</script>
 </html>

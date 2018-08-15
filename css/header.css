@@ -31,11 +31,13 @@ header {
 .subNavList.on {
     border-bottom: 3px solid #deab04;
 }
+
 .subNavList.mainLogo{
     margin:0 33px;
     margin-bottom:0;
     width:68px;
 }
+
 .logo {
     margin:0 33px;
     height: 128px;

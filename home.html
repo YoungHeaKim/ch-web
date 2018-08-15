@@ -14,6 +14,10 @@
   <link rel="stylesheet" href="css/home.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+  <!-- 시계부분 js-->
+  <script type="text/javascript" src="js/clock.js"></script>
+  <!-- mainBanner slider -->
+  <script type="text/javascript" src="js/jquery.flexslider.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -42,7 +46,7 @@
   <main>
     <h2 class="hidden">main</h2>
     <section class="container">
-      <article class="banner">
+      <article class="flexslider">
         <h3 class="hidden">slides</h3>
         <ul class="slides">
           <li class="flexSlide"><a href="#"><img src="https://static.straitstimes.com.sg/sites/default/files/articles/2018/01/24/21947313.jpg" alt="flexImg01"></a></li>
@@ -53,8 +57,22 @@
         </ul>
       </article>
     </section>
+    <script>
+      //flexslider
+      $(window).load(function () {
+        $('.flexslider').flexslider({
+          animation: "slide",
+          start: function (slider) { },
+          controlsContainer: $(".custom-controls-container"),
+          customDirectionNav: $(".custom-navigation a"),
+          slideshowSpeed: 2500,
+          auto: true,
+          touch: true,
+        });
+      });
+    </script>
     <section class="middle">
-        <div class="middleContiner">
+      <div class="middleContiner">
         <article class="matchArticle">
           <h3>Chung Hyeon`s match</h3>
           <div class="matchScroll">
@@ -147,35 +165,35 @@
           </div>
         </article>
       </div>
+      <article class="column">
+        <h3 class="hidden">column</h3>
+        <div class="line"></div>
+        <div class="cplContent">
+          <div class="colImg"><a href="news.html"><img src="assets/dummy-home-main.png" alt="chung hyeon"></a></div>
+          <div class="colCatego"><a href="news.html">NEWS</a></div>
+          <p class="colTitle"><a href="news.html">
+            Le jeune Asiatique de 21 ans vivra à Melbourne face au Suisse sa première demi-finale de Grand Chelem,
+            ce vendredi matin. Un affrontement surprise au terme d’une ascension express et d’un Open d’Australie
+            étourdissant.
+          </a></p>
+          <p class="colTxt"><a href="news.html">
+            « Bienvenue dans le monde du tennis », a salué John McEnroe. « Une étoile est née », a épinglé le Telegraph.
+            Le tennis, qui voulait voir défiler de nouvelles têtes, a découvert le Sud-Coréen Chung Hyeon (21 ans, 58e
+            mondial),
+            le demi-finaliste le moins bien classé à l’Open d’Australie depuis Marat Safin (86e en 2004). Un phénomène.
+            Au
+            premier coup d’œil,
+            ses lunettes colorées sautent aux yeux. Après ce détail, la solidité et l’explosivité, portées par des
+            cuisses
+            d’airain, sidèrent.
+            « Sa capacitéà bouger et à sortir des coups incroyables même avec un étirement total est exceptionnelle »,
+            a,
+            sur Twitter, signé
+            Pat Rafter, l’ancienne légende australienne.
+          </a></p>
+        </div>
+      </article>
     </section>
-    <article class="column">
-      <h3 class="hidden">column</h3>
-      <div class="line"></div>
-      <div class="cplContent">
-        <div class="colImg"><a href="news.html"><img src="assets/dummy-home-main.png" alt="chung hyeon"></a></div>
-        <div class="colCatego"><a href="news.html">NEWS</a></div>
-        <p class="colTitle"><a href="news.html">
-          Le jeune Asiatique de 21 ans vivra à Melbourne face au Suisse sa première demi-finale de Grand Chelem,
-          ce vendredi matin. Un affrontement surprise au terme d’une ascension express et d’un Open d’Australie
-          étourdissant.
-        </a></p>
-        <p class="colTxt"><a href="news.html">
-          « Bienvenue dans le monde du tennis », a salué John McEnroe. « Une étoile est née », a épinglé le Telegraph.
-          Le tennis, qui voulait voir défiler de nouvelles têtes, a découvert le Sud-Coréen Chung Hyeon (21 ans, 58e
-          mondial),
-          le demi-finaliste le moins bien classé à l’Open d’Australie depuis Marat Safin (86e en 2004). Un phénomène.
-          Au
-          premier coup d’œil,
-          ses lunettes colorées sautent aux yeux. Après ce détail, la solidité et l’explosivité, portées par des
-          cuisses
-          d’airain, sidèrent.
-          « Sa capacitéà bouger et à sortir des coups incroyables même avec un étirement total est exceptionnelle »,
-          a,
-          sur Twitter, signé
-          Pat Rafter, l’ancienne légende australienne.
-        </a></p>
-      </div>
-    </article>
   </main>
  <footer></footer>
 </div>

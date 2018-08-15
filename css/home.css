@@ -22,9 +22,10 @@ header {
 }
 
 .headerInner {
-    width: 100%;
+    width: 1130px;
     margin: auto;
-    border: 0 10px solid #f2f2f2;
+    border-right: 10px solid #F2F2F2;
+    border-left: 10px solid #F2F2F2;
 }
 
 .headerNav {
@@ -67,38 +68,58 @@ header {
 
 main {
     clear: both;
-    width: 1130px;
     margin: auto;
-    border-right: 10px solid #f2f2f2;
-    border-left: 10px solid #f2f2f2;
 }
 
 /* banner 부분 */
 .container {
+    overflow: hidden;
     width: 1440px;
     margin: auto;
-    overflow: hidden;
 }
 
-.banner {
-    position: relative;
+.flexslider {
+    max-width: 1130px;
     width: 1130px;
     height: 533px;
-    max-width: 1130px;
-}
-
-.slides {
-    height: 553px;
+    margin: 0 auto;
 }
 
 .flexSlide {
-    position: absolute;
-    float: left;
+    height: 533px;
 }
 
 .flexSlide img {
     width: 100%;
     height: 100%;
+}
+
+.content {
+    background: #f2f2f2;
+    max-width: 1130px;
+    height: 533px;
+    display: block;
+    margin: 0 auto;
+}
+
+.flex-viewport {
+    overflow: visible !important
+}
+
+.flex-control-paging{
+    display: none;
+}
+
+.flex-direction-nav{
+    display: none;
+}
+
+.middle {
+    clear: both;
+    width: 1130px;
+    margin: auto;
+    border-right: 10px solid #f2f2f2;
+    border-left: 10px solid #f2f2f2;
 }
 
 .middleContiner {
