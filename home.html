@@ -57,20 +57,6 @@
         </ul>
       </article>
     </section>
-    <script>
-      //flexslider
-      $(window).load(function () {
-        $('.flexslider').flexslider({
-          animation: "slide",
-          start: function (slider) { },
-          controlsContainer: $(".custom-controls-container"),
-          customDirectionNav: $(".custom-navigation a"),
-          slideshowSpeed: 2500,
-          auto: true,
-          touch: true,
-        });
-      });
-    </script>
     <section class="middle">
       <div class="middleContiner">
         <article class="matchArticle">
@@ -197,5 +183,19 @@
   </main>
  <footer></footer>
 </div>
+<script>
+  //flexslider
+  $(window).load(function () {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      start: function (slider) { },
+      controlsContainer: $(".custom-controls-container"),
+      customDirectionNav: $(".custom-navigation a"),
+      slideshowSpeed: 2500,
+      auto: true,
+      touch: true,
+    });
+  });
+</script>
 </body>
 </html>

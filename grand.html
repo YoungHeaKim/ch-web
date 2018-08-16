@@ -79,7 +79,7 @@
             </div>
             <div class="champMain champ02">
               <h3 class="champTitle">ROLAND GARROS</h3>
-              <h4 class="champSubTitle">CHAMPIONNAt</h4>
+              <h4 class="champSubTitle">CHAMPIONNAT</h4>
               <div class="colContainer">
                 <p class="champName"><a href="">Allexandre - 1957</a></p>
                 <p class="champName"><a href="">Allexandre - 1957</a></p>
@@ -103,7 +103,7 @@
             </div>
             <div class="champMain champ03">
               <h3 class="champTitle">ROLAND GARROS</h3>
-              <h4 class="champSubTitle">CHAMPIONNAt</h4>
+              <h4 class="champSubTitle">CHAMPIONNAT</h4>
               <div class="colContainer">
                 <p class="champName"><a href="">Allexandre - 1958</a></p>
                 <p class="champName"><a href="">Allexandre - 1958</a></p>
@@ -363,5 +363,38 @@
     </section>
   </main>
 </div>
+<script type="text/javascript">
+  // 위의 베너 변환 해주는 부분
+  $('.ctrlPage').children('li').click(function () {
+    var idx = $(this).index();
+    $(this).addClass('on');
+    $(this).siblings().removeClass('on');
+    $('.champMain').eq(idx).addClass('on');
+    $('.champMain').eq(idx).siblings().removeClass('on');
+  });
+
+  // 밑에 list들의 사진을 눌렀을때 밑에 글이 나오는 부분
+  $(function () {
+    const nextClick = $(this).index();
+    $('.thumb').click(function(){
+      const prevClick = $(this).index();
+      console.log(prevClick);
+      // 현재 눌러져 있는 것과 다음 눌러진 것이 같을 때
+      if (prevClick == nextClick) {
+        $('.thumb').children('.thumbImg').removeClass('on');
+        $('.thumb').children('.thumbText').removeClass('on');
+        $('.thumbImg').children('.imgBg').removeClass('on');
+      } else if (prevClick !== nextClick) {
+        $('.thumb').children('.thumbImg').removeClass('on');
+        $('.thumb').children('.thumbText').removeClass('on');
+        $('.thumbImg').children('.imgBg').removeClass('on');
+        $(this).find('.imgBg').addClass('on');
+        $(this).children('thumbImg').addClass('on');
+        $(this).children('thumbText').addClass('on');
+      }
+      return nextClick = $(this).index();
+    });
+  });
+</script>
 </body>
 </html>
