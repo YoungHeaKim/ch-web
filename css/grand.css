@@ -142,7 +142,7 @@
     display: none;
 }
 
-.champList>.thumb .thumbTxt.on {
+.champList>.thumb .thumbText.on {
     display: block;
     left: 0;
 }

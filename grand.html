@@ -378,7 +378,6 @@
     const nextClick = $(this).index();
     $('.thumb').click(function(){
       const prevClick = $(this).index();
-      console.log(prevClick);
       // 현재 눌러져 있는 것과 다음 눌러진 것이 같을 때
       if (prevClick == nextClick) {
         $('.thumb').children('.thumbImg').removeClass('on');
@@ -389,8 +388,8 @@
         $('.thumb').children('.thumbText').removeClass('on');
         $('.thumbImg').children('.imgBg').removeClass('on');
         $(this).find('.imgBg').addClass('on');
-        $(this).children('thumbImg').addClass('on');
-        $(this).children('thumbText').addClass('on');
+        $(this).children('.thumbImg').addClass('on');
+        $(this).children('.thumbText').addClass('on');
       }
       return nextClick = $(this).index();
     });
