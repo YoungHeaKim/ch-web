@@ -1,24 +1,21 @@
 .mainImg {
     position: relative;
-    min-width: 100%;
-    min-height: 614px;
-    background: url(../assets/dummy-french_open.png);
+    width: 100%;
+    background: url(../../assets/dummy-french_open.png);
     margin: auto;
+    background-size: cover; 
 }
 
 .mainContainer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -266px;
-    margin-left: -451px;
-    width: 902px;
-    height: 532px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
     background: rgba(0, 0, 0, 0.5);
 }
 
 .champInner {
-    width: 652px;
+    width: 90%;
+    overflow: hidden;
     margin: 50px auto;
 }
 
@@ -86,7 +83,6 @@
 }
 
 .champContainer {
-    width: 1200px;
     margin: auto;
 }
 
@@ -94,31 +90,28 @@
     display: flex;
     flex-flow: wrap;
     position: relative;
-    width: 1200px;
     margin: auto;
-    clear: both;
+    overflow: hidden;
 }
 
 .champList>.thumb {
+    width: 25%;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
-.thumbText {
-    display: none;
-    z-index: 1000;
-    position: absolute;
-    background: #fff;
-    width: 1200px;
-    height: 200px;
-    margin-top: -200px;
-}
-
 .champList>.thumb .thumbImg {
     position: relative;
-    width: 200px;
-    height: 200px;
+    height: 192px;
     margin-bottom: 0;
+}
+
+.thumbText {
+    display: none;
+    z-index: 1500;
+    position: absolute;
+    background: #fff;
+    margin-top: -192px;
 }
 
 .imgBg {
@@ -132,16 +125,12 @@
     background: rgba(0,0,0,0.7);
 }
 
-.champList>.thumb .thumbImg.on {
-    margin-bottom: 200px;
-}
-
-.champList>.thumb .thumbImg.on {
-    margin-bottom: 200px;
-}
-
 .imgBg.on {
     display: none;
+}
+
+.champList>.thumb .thumbImg.on {
+    margin-bottom: 192px;
 }
 
 .champList>.thumb .thumbText.on {
@@ -150,18 +139,19 @@
 }
 
 .barInner {
-    width: 800px;
+    width: 90%;
     margin: auto;
-    height: 102px;
+    overflow: hidden;
     padding-top: 49px;
+    padding-bottom: 49px;
 }
 
 .barPage {
     float: left;
-    width: 200px;
+    width: 180px;
     margin: 15px 0;
-    font: 18px/21px 'Comfortaa', sans-serif;
-    margin-right: 62px;
+    font: 16px/21px 'Comfortaa', sans-serif;
+    margin-right: 3%;
 }
 
 .barPage>.barTitle {
@@ -170,11 +160,22 @@
     padding-right: 10px;
 }
 
+.barPage>.barTitle:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    right: -2.5px;
+    top: 50%;
+    margin-top: -7.5px;
+    background: url(../../assets/icon-bar.svg);
+}
+
 .barPage>.barTxt {
     float: left;
     padding-left: 10px;
 }
 
 .barPage.last {
-    width: 460px;
+    width: 410px;
 }

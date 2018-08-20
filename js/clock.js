@@ -2,36 +2,36 @@ function clock() {
   const date = new Date();
 
   // date에서 시간 분 초
-  const hours = date.getHours();
-  const min = date.getMinutes();
-  const sec = date.getSeconds();
+  let hours = date.getHours();
+  let min = date.getMinutes();
+  let sec = date.getSeconds();
   // 초의 각도
-  const secDegree = sec * 6;
+  let secDegree = sec * 6;
 
   // 시간을 오후 오전으로 나누기 위해 12를 빼준다.  
   if ( hours > 12 ) hours = hours - 12;
 
   // 시간의 각도 계산
-  const hoursDegree = ( hours * 30 ) + ( min / 2 );
+  let hoursDegree = ( hours * 30 ) + ( min / 2 );
 
   // 시침의 각도를 정수로 변환 해주어야 한다.
   hoursDegree = parseInt(hoursDegree);
 
   // 분침의 각도
-  const minDegree = min * 6;
+  let minDegree = min * 6;
 
   // 시침, 분침, 초침의 각도를 계산한 값으로 변경
   /* IE 10+, Firefox */
-  document.getElementById("hour").style.transform = "rotate(" + dh + "deg)";
-  document.getElementById("minute").style.transform = "rotate(" + dm + "deg)";
+  document.getElementById("hour").style.transform = "rotate(" + hoursDegree + "deg)";
+  document.getElementById("minute").style.transform = "rotate(" + minDegree + "deg)";
 
   /* IE 9 */
-  document.getElementById("hour").style.MsTransform = "rotate(" + dh + "deg)";
-  document.getElementById("minute").style.MsTransform = "rotate(" + dm + "deg)";
+  document.getElementById("hour").style.MsTransform = "rotate(" + hoursDegree + "deg)";
+  document.getElementById("minute").style.MsTransform = "rotate(" + minDegree + "deg)";
 
   /* Opera, Chrome, Safari */
-  document.getElementById("hour").style.WebkitTransform = "rotate(" + dh + "deg)";
-  document.getElementById("minute").style.WebkitTransform = "rotate(" + dm + "deg)";
+  document.getElementById("hour").style.WebkitTransform = "rotate(" + hoursDegree + "deg)";
+  document.getElementById("minute").style.WebkitTransform = "rotate(" + minDegree + "deg)";
 
   // 사각형 꼭지점 별로 회전
   const changeClock = minDegree;

@@ -1,4 +1,7 @@
 /* header부분 */
+.web {
+    display: none;
+}
 header {
     border-top: 10px solid #f2f2f2;
 }

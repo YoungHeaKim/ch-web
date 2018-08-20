@@ -1,0 +1,103 @@
+.tablet {
+    display: none;
+}
+
+.logoIcon.off{
+    display: none;
+}
+
+.tennisBall.off{
+    display: none;
+}
+
+.headerInner {
+    position:  relative;
+    margin: auto;
+    width:  100%;
+    height: 40px;
+    overflow-y: auto;
+}
+
+.subNav {
+    width: 520px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    height: 40px;
+}
+
+.subNavList {
+    float: left;
+    margin: 10px 8px;
+    font: 14px/18px 'Comfortaa', sans-serif;
+}
+
+.subNavList>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #deab04;
+}
+
+.subNavList.on {
+    border-bottom: 3px solid #deab04;
+    margin-bottom: 7px;
+}
+
+.mainLogo {
+    padding: 0;
+    float: left;
+    margin: 0 5%;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+.tennisBall{
+    width:40px;
+    height:40px;
+}
+.tennisBall>a{
+    display: block;
+    width: 100%;
+    height:100%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.headerNav {
+    clear: both;
+    z-index: 10;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    border-bottom: 1px solid #ba2a2a;
+    background-color: rgba(119,42,42,1);
+}
+
+.nav {
+    position: relative;
+    width: 780px;
+    height:40px;
+    margin: auto;
+}
+
+.navList {
+    float: left;
+    width: 126px;
+    text-align: center;
+    font: 14px/40px 'Comfortaa', sans-serif;
+}
+
+.navList>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+}

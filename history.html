@@ -11,8 +11,12 @@
   <!-- font부분 -->
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/history.css">
+  <link rel="stylesheet" href="css/header.css" media="only screen and (min-width:768px)">
+  <link rel="stylesheet" href="css/mobile/m-sub-header.css" media="only screen and (min-width:375px)">
+  <link rel="stylesheet" href="css/tablet/t-sub-header.css" media="only screen and (min-width:376px) and (max-width:767px)">
+  <link rel="stylesheet" href="css/history.css" media="only screen and (min-width: 768px)">
+  <link rel="stylesheet" href="css/mobile/m-history.css" media="only screen and (min-width: 375px)">
+  <link rel="stylesheet" href="css/tablet/t-history.css" media="only screen and (min-width: 376px) and (max-width:767px)">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 </head>
@@ -27,8 +31,8 @@
         <li class="subNavList mainLogo">
         <div class="logo">
             <h2 class="hidden">logo</h2>
-            <a href="#" class="logoIcon tablet web"><img src="assets/logo-home.svg" alt="logoIcon1"></a>
-            <a href="#" class="tennisBall tablet mobile"><img src="assets/btn-tennis_ball.svg" alt="logoIcon2"></a>
+            <a href="#" class="logoIcon tablet mobile"><img src="assets/logo-home.svg" alt="logoIcon1"></a>
+            <a href="#" class="tennisBall mobile"><img src="assets/btn-tennis_ball.svg" alt="logoIcon2"></a>
         </div>
         </li>
         <li class="subNavList"><a href="#">Childhood</a></li>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <title>CHUNG HYEON</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <meta name="author" content="Chung Hyeon">
   <meta name="description" content="Chung Hyeon Tennis">
@@ -10,9 +11,12 @@
   <!-- font부분 -->
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/history-moment.css">
+  <link rel="stylesheet" href="css/header.css" media="only screen and (min-width:768px)">
+  <link rel="stylesheet" href="css/mobile/m-sub-header.css" media="only screen and (min-width:375px)">
+  <link rel="stylesheet" href="css/tablet/t-sub-header.css" media="only screen and (min-width:376px) and (max-width:767px)">
+  <link rel="stylesheet" href="css/history-moment.css" media="only screen and (min-width:768px)">
+  <link rel="stylesheet" href="css/mobile/m-history-moment.css" media="only screen and (min-width:375px)">
+  <link rel="stylesheet" href="css/tablet/t-history-moment.css" media="only screen and (min-width:376px) and (max-width:767px)">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 </head>
@@ -31,10 +35,10 @@
         <li class="subNavList mainLogo">
           <div class="logo">
             <h2 class="hidden">logo</h2>
-            <a href="#" class="logoIcon tablet web">
+            <a href="#" class="logoIcon tablet mobile">
               <img src="assets/logo-home.svg" alt="logoIcon1">
             </a>
-            <a href="#" class="tennisBall tablet mobile">
+            <a href="#" class="tennisBall mobile">
               <img src="assets/btn-tennis_ball.svg" alt="logoIcon2">
             </a>
           </div>
@@ -73,7 +77,7 @@
     </div>
   </header>
   <main>
-    <section class="history">
+    <section class="history tablet mobile">
       <h2 class="hidden">historyYear</h2>
       <article class="historyLeft historyYear">
         <div class="historyYear1">
@@ -119,6 +123,74 @@
         <a href="">
           <img src="assets/dummy-history-5.png" alt="">
         </a>
+      </div>
+    </section>
+    <section class="history web">
+      <div class="wrapper01">
+        <div class="img01 historyImage">
+          <a href="">
+            <img src="assets/dummy-history-2.png" alt="">
+          </a>
+        </div>
+        <div class="img02 historyImage">
+          <a href="">
+            <img src="assets/dummy-history-3.png" alt="">
+          </a>
+        </div>
+        <div class="logoCenter">
+          <a href="">
+            <img src="assets/logo-home.svg" alt="">
+          </a>
+        </div>
+        <div class="img03 historyImage">
+          <a href="">
+            <img src="assets/dummy-history-3.png" alt="">
+          </a>
+        </div>
+        <div class="img04 historyImage">
+          <a href="">
+            <img src="assets/dummy-history-2.png" alt="">
+          </a>
+        </div>
+        <div class="text01">
+          <dl>
+            <dt>CHUNG HYEON</dt>
+            <dd>1996</dd>
+          </dl>
+        </div>
+        <div class="img05 historyImage">
+          <a href="">
+            <img src="assets/dummy-history-4.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="wrapper02">
+        <div class="img06 historyImage">
+          <a href="">
+            <img src="assets/dummy-history-2.png" alt="">
+          </a>
+        </div>
+        <div class="img07 historyImage">
+          <a href="">
+            <img src="assets/dummy-history-3.png" alt="">
+          </a>
+        </div>
+        <div class="text02">
+          <dl>
+            <dt>CHUNG HYEON</dt>
+            <dd>1996</dd>
+          </dl>
+        </div>
+        <div class="img08 historyImage">
+          <a href="">
+          <img src="assets/dummy-history-3.png" alt="">
+        </a>
+        </div>
+        <div class="img09 historyImage">
+          <a href="">
+          <img src="assets/dummy-history-2.png" alt="">
+        </a>
+        </div>
       </div>
     </section>
   </main>

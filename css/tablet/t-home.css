@@ -1,0 +1,268 @@
+.tablet {
+    display: none;
+}
+
+.headerInner {
+    margin: auto;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    padding: 5px 0;
+    margin: auto;
+}
+
+.headerNav {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(119, 42, 42, 1);
+    margin: auto;
+    border-bottom: 1px solid #ba2a2a;
+}
+
+.nav>ul {
+    position: relative;
+    width: 780px;
+    margin: auto;
+    height: 40px;
+}
+
+.navList {
+    text-align: center;
+    float: left;
+    width: 126px;
+    font: 14px/40px 'Comfortaa', sans-serif;
+}
+
+.navList>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.container {
+    overflow: hidden;
+    margin: auto;
+}
+
+.flexslider {
+    height: 432px;
+    margin: 0 auto;
+}
+
+.flexSlide {
+    height: 432px;
+}
+
+.flexSlide img{
+    width:100%;
+    height:100%;
+}
+
+.content {
+    background: #f2f2f2;
+    height: 432px;
+    display: block;
+    margin: 0 auto;
+}
+
+.flex-viewport {
+    overflow: visible !important;
+}
+
+.flex-control-paging{
+    display: none;
+}
+
+.flex-direction-nav{
+    display: none;
+}
+
+.middle {
+    clear: both;
+    margin: auto;
+}
+
+.middleContiner {
+    position: relative;
+}
+
+/* match정보 부분 */
+.matchArticle {
+    margin-top: 29px;
+    font: 18px/18px 'Comfortaa', sans-serif;
+    color: #16203c;
+    height: 397px;
+}
+
+.matchScroll {
+    height: 344px;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+.matchList {
+    clear: both;
+    padding-top: 17px;
+}
+
+.matchLogo {
+    float: left;
+    background: url(../../assets/dummy-main-bnp_open.png) no-repeat;
+    background-size: cover;
+    margin: 0 17px 0 4%;
+    width: 72px;
+    height: 78px;
+}
+
+.matchLogo>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.matchList>a {
+    width: 70%;
+    height: 78px;
+    background: rgba(216, 216, 216, 0.2);
+    float: left;
+    padding-left: 4px;
+    color: #000;
+}
+
+.matchDay {
+    margin-top: 2px;
+    font: 14px/18px 'Comfortaa', sans-serif;
+}
+
+.matchChamp {
+    margin-top: 20px;
+    margin-left: 20px;
+    font: 18px/24px 'Comfortaa', sans-serif;
+}
+
+/* 시계 부분 */
+.clock {
+    position: absolute;
+    width: 52px;
+    height: 83px;
+    left: 50%;
+    top: -280px;
+    margin-left: -26px;
+}
+
+.clock img {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.clock img#round{
+    position:absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left:50%;
+    z-index: 10;
+    margin-left: -4px; 
+    margin-top: -4px;
+}
+
+/* instargram 부분 */
+.instagram {
+    margin: 26px auto auto;    
+}
+
+.snsLogo {
+    width: 37px;
+    height: 37px;
+    margin: auto auto 16px;
+}
+
+.snsLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+.snsScroll {
+    height: 344px;
+    overflow-x: hidden;
+}
+
+.middleContiner::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    height: 2px;
+    background-color: #16203c;
+}
+
+/* news 부분 */
+.column {
+    position: relative;
+}
+
+.colImg {
+    margin: 30px auto auto;
+}
+
+.colImg a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.colImg a img {
+    width: 100%;
+    height: 100%;
+}
+
+.colCatego {
+    margin-top: 41px;
+    font: bold 14px/18px 'Comfortaa', sans-serif;
+    text-align: center;
+}
+
+.colCatego>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #bb2c2c;
+}
+
+.colTitle {
+    width: 90%;
+    margin: 56px auto auto;
+    text-align: center;
+    font: 24px/32px 'Comfortaa', sans-serif;
+}
+
+.colTitle>a {
+    color: #000;
+}
+
+.colTxt {
+    width: 90%;
+    margin: 52px auto auto;
+    padding-bottom: 65px;
+    text-align: justify;
+    font: 18px/22px 'Comfortaa', sans-serif;
+}
+
+/* footer */
+footer {
+    margin: auto;
+    width: 100%;
+    height: 104px;
+    border-top: 10px solid #F2F2F2;
+    background: url(../../assets/bg-footer.png);
+    background-size: cover;
+    background-position: 50% -525px;
+}
