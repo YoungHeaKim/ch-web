@@ -12,13 +12,15 @@
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/home.css" media="only screen and (min-width: 768px)">
-  <link rel="stylesheet" href="css/mobile/m-home.css" media="only screen and (min-width: 375px)">
+  <link rel="stylesheet" href="css/mobile/m-home.css" media="only screen and (max-width: 375px)">
   <link rel="stylesheet" href="css/tablet/t-home.css" media="only screen and (min-width: 376px) and (max-width:767px)">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <!-- 시계부분 js-->
   <script type="text/javascript" src="js/clock.js"></script>
   <!-- mainBanner slider -->
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+  <!-- mobile일때 nav -->
+  <script type="text/javascript" src="js/mobileNav.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -30,6 +32,9 @@
         <a href="#" class="logoIcon tablet mobile"><img src="assets/logo-home.svg" alt="logoIcon1"></a>
         <a href="#" class="tennisBall web mobile"><img src="assets/btn-tennis_ball.svg" alt="logoIcon2"></a>
       </div>
+    </div>
+    <div class="navIcon tablet web">
+      <img src="assets/icon_nav.svg" alt="">
     </div>
     <div class="headerNav">
       <nav class="nav">
@@ -155,7 +160,7 @@
       <article class="column">
         <h3 class="hidden">column</h3>
         <div class="line"></div>
-        <div class="cplContent">
+        <div class="colContent">
           <div class="colImg"><a href="news.html"><img src="assets/dummy-home-main.png" alt="chung hyeon"></a></div>
           <div class="colCatego"><a href="news.html">NEWS</a></div>
           <p class="colTitle"><a href="news.html">

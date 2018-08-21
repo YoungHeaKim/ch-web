@@ -12,13 +12,14 @@
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/header.css" media="only screen and (min-width:768px)">
-  <link rel="stylesheet" href="css/mobile/m-sub-header.css" media="only screen and (min-width:375px)">
+  <link rel="stylesheet" href="css/mobile/m-sub-header.css" media="only screen and (max-width:375px)">
   <link rel="stylesheet" href="css/tablet/t-sub-header.css" media="only screen and (min-width:376px) and (max-width:767px)">
   <link rel="stylesheet" href="css/grand.css" media="only screen and (min-width:768px)">
-  <link rel="stylesheet" href="css/mobile/m-grand.css" media="only screen and (min-width:375px)">
+  <link rel="stylesheet" href="css/mobile/m-grand.css" media="only screen and (max-width:375px)">
   <link rel="stylesheet" href="css/tablet/t-grand.css" media="only screen and (min-width:376px) and (max-width:767px)">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+  <!-- mobile일때 nav -->
+  <script type="text/javascript" src="js/mobileNav.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -38,6 +39,9 @@
         <li class="subNavList"><a href="#">French Open</a></li>
         <li class="subNavList"><a href="#">Wimbledon</a></li>
       </ul>
+    </div>
+    <div class="navIcon tablet web">
+      <img src="assets/icon_nav.svg" alt="">
     </div>
     <div class="headerNav">
       <nav class="nav">

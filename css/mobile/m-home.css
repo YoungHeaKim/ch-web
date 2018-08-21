@@ -1,0 +1,302 @@
+/* header 부분 */
+.mobile {
+    display: none;
+}
+
+.navIcon {
+    position: fixed;
+    right: 18px;
+    top: 18px;
+    width: 48px;
+    height: 48px;
+    z-index: 3000;
+    cursor: pointer;
+}
+
+.navIcon img {
+    width: 100%;
+    height: 100%;
+}
+
+.headerNav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 235px;
+    z-index: 2000;
+    transition: all 0.2s ease;
+    background: #ba2a2a;
+}
+
+.headerNav.on {
+    display: block;
+}
+
+.nav {
+    margin: 33px 0 0 33px;
+}
+
+.navList {
+    width: 140px;
+    margin-bottom: 20px;
+    font: 14px/18px 'Comfortaa', sans-serif;
+}
+
+.navList a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.navList:last-child {
+    position: absolute;
+    bottom: 12px;
+    right: 18px;
+    text-align: right;
+}
+
+/* slider부분 */
+.container {
+    overflow: hidden;
+    margin: auto;
+}
+
+.flexslider {
+    height: 432px;
+    margin: 0 auto;
+}
+
+.flexSlide {
+    height: 432px;
+}
+.flexSlide img{
+    width:100%;
+    height:100%;
+}
+
+.content {
+    background: #f2f2f2;
+    height: 432px;
+    display: block;
+    margin: 0 auto;
+}
+
+.flex-viewport {
+    overflow: visible !important;
+}
+
+.flex-control-paging{
+    display: none;
+}
+
+.flex-direction-nav{
+    display: none;
+}
+
+.middle {
+    clear: both;
+    margin: auto;
+}
+
+.middleContiner {
+    position: relative;
+}
+
+/* match 정보 부분 */
+.matchArticle {
+    margin-top: 29px;
+    height: 397px;
+    color: #16203c;
+    font: 18px/18px 'Comfortaa', sans-serif;
+}
+
+.matchScroll {
+    height: 344px;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+.matchList {
+    clear: both;
+    padding-top: 17px;
+}
+
+.matchLogo {
+    float: left;
+    background: url(../../assets/dummy-main-bnp_open.png) no-repeat;
+    background-size: 72px 78px;
+    background-position-y: 50%;
+    text-align: center;
+    margin: 0 17px 0 4%;
+    width: 72px;
+    height: 116px;
+}
+
+.matchLogo>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.matchList>a {
+    width: 63%;
+    height: 116px;
+    background: rgba(216, 216, 216, 0.2);
+    float: left;
+    padding-left: 4px;
+    color: #000;
+}
+
+.matchDay {
+    margin-top: 2px;
+    font: 14px/18px 'Comfortaa', sans-serif;
+}
+
+.matchDay span:first-child {
+    margin-right: 15px;
+}
+
+.matchChamp {
+    margin-top: 20px;
+    margin-left: -60px;
+    font: 14px/18px 'Comfortaa', sans-serif;
+}
+
+.matchChamp span {
+    display: block;
+    margin: 0 1%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* instargram 부분 */
+.instagram {
+    margin: 26px auto auto;    
+}
+
+.snsLogo {
+    width: 37px;
+    height: 37px;
+    margin: auto auto 16px;
+}
+
+.snsLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+.snsScroll {
+    height: 344px;
+    overflow-x: hidden;
+}
+
+/* 시계 부분 */
+.clock {
+    position: absolute;
+    width: 52px;
+    height: 83px;
+    left: 50%;
+    top: -280px;
+    margin-left: -26px;
+}
+
+.clock img {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.clock img#round{
+    position:absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    margin-left: -4px; 
+    margin-top: -4px;
+}
+
+.middleContiner::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -155px;
+    width: 310px;
+    height: 2px;
+    background-color: #16203c;
+}
+
+/* column 부분 */
+.column {
+    position: relative;
+}
+
+.colContent{
+    position:relative;
+    padding-top: 50px;
+}
+
+.colImg {
+    margin: 30px auto auto;
+    height:319px;
+}
+
+.colImg a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.colImg a img {
+    width: 100%;
+    height: 100%;
+}
+
+.colCatego {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 41px 0 0 -22px;
+    font: bold 14px/18px 'Comfortaa', sans-serif;
+    text-align: center;
+}
+
+.colCatego>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #bb2c2c;
+} s
+
+.colTitle {
+    width: 90%;
+    margin: 29px auto auto;
+    text-align: center;
+    font: 18px/24px 'Comfortaa', sans-serif;
+}
+
+.colTitle>a {
+    color: #000;
+}
+
+.colTxt {
+    width: 90%;
+    margin: 29px auto auto;
+    padding-bottom: 65px;
+    text-align: justify;
+    font: 14px/18px 'Comfortaa', sans-serif;
+}
+
+/* footer */
+footer {
+    margin: auto;
+    width: 100%;
+    height: 104px;
+    border-top: 10px solid #F2F2F2;
+    background: url(../../assets/bg-footer.png);
+    background-size: cover;
+    background-position: 50% -525px;
+}

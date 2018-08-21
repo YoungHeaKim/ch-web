@@ -2,6 +2,7 @@
 .web {
     display: none;
 }
+
 header {
     border-top: 10px solid #f2f2f2;
 }
@@ -9,6 +10,7 @@ header {
 .logoIcon.off{
     display: none;
 }
+
 .tennisBall.off{
     display: none;
 }

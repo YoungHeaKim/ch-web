@@ -1,0 +1,182 @@
+.mainImg {
+    position: relative;
+    width: 100%;
+    background: url(../../assets/dummy-french_open.png);
+    margin: auto;
+    background-size: cover; 
+}
+
+.mainContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.champInner {
+    width: 90%;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.champMain.on {
+    display: block;
+}
+
+.champMain {
+    display: none;
+}
+
+.champ01, .champ02, .champ03 {
+    text-align: center;
+}
+
+.champTitle {
+    color: #deab04;
+    font: 24px/29px 'Comfortaa', sans-serif;
+}
+
+.champSubTitle {
+    color: #deab04;
+    font: 20px/24px 'Comfortaa', sans-serif;
+    margin: 37px 0 57px;
+}
+
+.colContainer {
+    width: 100%;
+    overflow: scroll;
+    height: 264px;
+    position: relative;
+    margin-bottom:16px;
+}
+
+.champName {
+    font: 18px/24px 'Comfortaa', sans-serif;
+    margin-bottom: 20px;
+}
+
+.champName>a {
+    color: #fff;
+}
+
+.ctrlPage {
+    width: 100px;
+    height: 12px;
+    margin: auto;
+}
+
+.ctrlPage>li.on {
+    border: 1px solid #deab04;
+    background-color: #deab04;
+}
+
+.ctrlPage>li {
+    float: left;
+    cursor: pointer;
+    border: 1px solid #deab04;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+}
+
+.ctrlPage>.secondPage {
+    margin: 0 32px;
+}
+
+.champContainer {
+    margin: auto;
+}
+
+.champList {
+    display: flex;
+    flex-flow: wrap;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.champList>.thumb {
+    width: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.champList>.thumb .thumbImg {
+    position: relative;
+    height: 192px;
+    margin-bottom: 0;
+}
+
+.thumbText {
+    display: none;
+    z-index: 1500;
+    position: absolute;
+    background: #fff;
+    margin-top: -192px;
+}
+
+.imgBg {
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.imgBg.on {
+    display: none;
+}
+
+.champList>.thumb .thumbImg.on {
+    margin-bottom: 192px;
+}
+
+.champList>.thumb .thumbText.on {
+    display: block;
+    left: 0;
+}
+
+.barInner {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 49px;
+    padding-bottom: 49px;
+}
+
+.barPage {
+    float: left;
+    width: 180px;
+    margin: 15px 0;
+    font: 16px/21px 'Comfortaa', sans-serif;
+    margin-right: 3%;
+}
+
+.barPage>.barTitle {
+    position: relative;
+    float: left;
+    padding-right: 10px;
+}
+
+.barPage>.barTitle:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    right: -2.5px;
+    top: 50%;
+    margin-top: -7.5px;
+    background: url(../../assets/icon-bar.svg);
+}
+
+.barPage>.barTxt {
+    float: left;
+    padding-left: 10px;
+}
+
+.barPage.last {
+    width: 410px;
+}
