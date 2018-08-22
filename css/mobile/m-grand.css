@@ -50,6 +50,15 @@
     margin-bottom:16px;
 }
 
+.col {
+    position: absolute;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    width: 200%;
+    margin: auto;
+}
+
 .champName {
     font: 18px/24px 'Comfortaa', sans-serif;
     margin-bottom: 20px;

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>CHUNG HYEON</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style type="text/css">
+       #instaPics {
+            max-width: 600px;
+            overflow: hidden;
+       }
+       .insta-box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 4px;
+            border: 1px solid #ddd;
+       }
+       .image-layer {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+       }
+       .image-layer img {
+            width: 100%;
+            height: 100%;
+       }
+       .caption-layer {
+            display: none;
+            position: absolute;
+            top: 0;
+            background: rgba(255,255,255,0.8);
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 10px;
+            color: #333;
+            text-align:center;
+       }
+       .insta-caption {
+         font-size:16px; padding-top:80px;
+       }
+       .insta-likes {
+         text-align:center;
+         font-size:12px; padding-top:10px;
+       }
+       </style>
+  </head>
+  <script type="text/javascript">
+   jQuery(function($) {
+        var tocken = "286321780.b32e321.8d4d0e4c9c50405e817ee68a1b326edb"; /* Access Tocken 입력 */
+        var count = "6";
+        $.ajax({
+            type: "GET",
+            dataType: "jsonp",
+            cache: false,
+            url: "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + tocken + "&count=" + count,
+            success: function(response) {
+             if ( response.data.length > 0 ) {
+                  for(var i = 0; i < response.data.length; i++) {
+                       var insta = '<div class="insta-box">';
+                       insta += "<a target='_blank' href='" + response.data[i].link + "'>";
+                       insta += "<div class='image-layer'>";
+                       insta += "<img src='" + response.data[i].images.thumbnail.url + "'>";
+                       insta += '<img src="' + response.data[i].images.thumbnail.url + '">';
+                       insta += "</div>";
+                       if ( response.data[i].caption !== null ) {
+                            insta += "<div class='caption-layer'>";
+                            if ( response.data[i].caption.text.length > 0 ) {
+                                 insta += "<p class='insta-caption'>" + response.data[i].caption.text + "</p>"
+                            }
+                            insta += "<span class='insta-likes'>" + response.data[i].likes.count + " Likes</span>";
+                            insta += "</div>";
+                       }
+                       insta += "</a>";
+                       insta += "</div>";
+                       $("#instaPics").append(insta);
+                  }
+             }
+             $(".insta-box").hover(function(){
+                  $(this).find(".caption-layer").css({"backbround" : "rgba(255,255,255,0.7)", "display":"block"});
+             }, function(){
+                  $(this).find(".caption-layer").css({"display":"none"});
+             });
+            }
+           });
+   });
+   </script>
+  <body>
+
+  </body>
+</html>

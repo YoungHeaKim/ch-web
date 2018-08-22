@@ -93,3 +93,7 @@ header {
     height: 100%;
     color: #FFFFFF;
 }
+
+.navIcon.web{
+    display:none;
+}

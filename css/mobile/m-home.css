@@ -191,6 +191,56 @@
     overflow-x: hidden;
 }
 
+#instaPics {
+    overflow: hidden;
+    margin: auto;
+    max-width: 90%;
+}
+
+.insta-box {
+    position: relative;
+    width: 48%;
+    height: 48%;
+    float: left;
+    margin: 1%;
+}
+
+.image-layer {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.image-layer img {
+    width: 100%;
+    height: 100%;
+}
+
+.caption-layer {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: rgba(255,255,255,0.8);
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.insta-caption {
+    font-size: 16px;
+    padding-top: 80px;
+}
+
+.insta-likes {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
 /* 시계 부분 */
 .clock {
     position: absolute;
